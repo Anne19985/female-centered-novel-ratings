@@ -27,7 +27,7 @@ with st.sidebar:
 #ratings
 
 book_name = st.text_input("请输入书名：")
-impressed_rate = st.number_input("请输入你的印象分：", max_value=10)
+impressed_rate = st.number_input("请输入你的印象分*：", max_value=10)
 book_author = st.text_input("请输入作者姓名：")
 book_plate = st.text_input("请输入作品发布平台：")
 ich = st.text_input("评分人：")
