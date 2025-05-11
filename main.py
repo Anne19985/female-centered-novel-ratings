@@ -14,13 +14,13 @@ with st.sidebar:
 ### 1.打分为减分制。
 完结小说满分为10分，读者根据阅读后体验和感受，给一个印象得分，\n
 然后再根据组规进行减分，\n
-即最终得分=印象分-减分项，最终得分<<10分。\n
+即最终得分=印象分-减分项-，最终得分<<10分。\n
 【谨慎打8分以上，禁止分数膨胀】
 
 ### 2.打分规则。
 各项基础扣分分值为1'，情节严重的可以增加扣分分值，无上限，\n
 必须列出各项减分项存在与否。\n
-【❗❗❗注意：没有明确标注/提出的、不完全的、模棱两可的即需要扣分，请各位打分人严格执行！！\n
+【❗❗❗注意：没有明确标注/提出的、不完全的、模棱两可的即需要扣分，请各位打分人严格执行！！】\n
 
 """)
 
@@ -60,7 +60,7 @@ for i, answer in enumerate(answers[22:], 23):
     if answer == n:
         r[i] = -1
 
-extra_rate = st.number_input("因为其它恶劣请节我还想减分：", max_value=10)
+extra_rate = st.number_input("因为其它恶劣情节，我还想减分：", max_value=10)
 paragraph = st.text_area("备注：")
 sum_rate = impressed_rate + sum(r) - extra_rate
 st.write(f"最终评分为：{sum_rate}")
