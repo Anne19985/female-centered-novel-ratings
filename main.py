@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from tabulate import tabulate
 from principle import principles
 from datetime import datetime
 
